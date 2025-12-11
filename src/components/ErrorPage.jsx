@@ -20,14 +20,14 @@ export default function ErrorPage({ status = 404, title = "Page not found", mess
       <section className="relative z-10 w-full max-w-4xl mx-auto px-6">
         <div className="rounded-2xl bg-black/60 backdrop-blur-md border border-white/6 shadow-2xl p-10 md:p-16 flex flex-col md:flex-row items-center gap-8">
 
-          {/* Left: Big status */}
+      
           <div className="flex-shrink-0 w-full md:w-1/3 text-center">
             <div className="inline-flex items-center justify-center w-40 h-40 md:w-52 md:h-52 rounded-full bg-gradient-to-tr from-red-600 to-pink-500 shadow-xl transform transition-transform duration-500 hover:scale-105">
               <span className="text-5xl md:text-6xl font-extrabold tracking-tight">{status}</span>
             </div>
           </div>
 
-          {/* Right: Message and actions */}
+          
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-2xl md:text-3xl font-bold mb-2">{title}</h1>
             <p className="text-sm md:text-base text-gray-300 mb-6">{message}</p>
